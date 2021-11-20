@@ -12,7 +12,7 @@ def f1(what_to,by_what):
                     buff.append(res)
             with open(path, encoding='utf-8',mode="w") as R_file:
                 R_file.writelines(buff)
-f1('Гоблин','Волк')
+f1('пружинку','верёвочку')
 
 
 
