@@ -50,8 +50,12 @@ store = {
 
 res = 0
 keys = list(goods.keys())
+### обращаемся не по коду а по наименованию
+# в цикле необходим отступ
 for key in keys:
-res += store[key]["quantity"] * [key]["price"]
+   keyvalue=goods[key]
+   res += store[keyvalue][0]["quantity"] * store[keyvalue][0]["price"]
+
 print(res)
 
 
