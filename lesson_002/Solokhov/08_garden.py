@@ -13,6 +13,7 @@ meadow_set = set(meadow)
 print(garden_set, meadow_set)
 
 
+
 # выведите на консоль все виды цветов
 print(garden_set | meadow_set)
 

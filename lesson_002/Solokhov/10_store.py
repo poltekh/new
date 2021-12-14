@@ -69,6 +69,7 @@ table_quantity = table_item[0]['quantity'] + table_item[1]['quantity'] + table_i
 table_cost = table_item[0]['quantity'] * table_item[0]['price'] + table_item[1]['quantity'] * table_item[1]['price'] + table_item[2]['quantity'] * table_item[2]['price']
 print('Стул -', table_quantity, 'шт, стоимость', table_cost, 'руб')
 
+
 # Вывести стоимость каждого товара на складе: один раз распечать сколько всего столов, стульев и т.д. на складе
 # Формат строки <товар> - <кол-во> шт, стоимость <общая стоимость> руб
 

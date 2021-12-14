@@ -23,6 +23,7 @@ violator_songs_list = [
 sum1 = violator_songs_list[3][1] + violator_songs_list[5][1] + violator_songs_list[8][1]
 print('Три песни звучат', round(sum1, 2), 'минут')
 
+
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
     'World in My Eyes': 4.76,

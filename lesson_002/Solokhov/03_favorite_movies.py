@@ -23,3 +23,4 @@ for char in my_favorite_movies:
         movie = movie + char
 movies.append(movie)
 print(movies[0], movies[4], movies[1], movies[3])
+
