@@ -10,4 +10,8 @@
 
 a, b = 179, 37
 
-# TODO здесь ваш код
+c = 0
+while a > b:
+    a = a - b
+    c+=1
+print(c)
