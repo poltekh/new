@@ -13,14 +13,15 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 
 # Переопределять my_favorite_movies и использовать .split() нельзя.
 # Запятая не должна выводиться.
-
-str = ' '
-f = my_favorite_movies + ','
-list = []
-for i in f:
-    if i != ',':
-        str += i
+buffer = ""
+list_of_fav = []
+for char in my_favorite_movies:
+    if char == ",":
+        list_of_fav.append(buffer)
+        buffer = ""
     else:
-        list.append(str)
-        str = ' '
-print(list[0], list[-1], list[1], list[-2])
+        buffer += char
+list_of_fav.append(buffer)
+queue = [0,-1,1,-2]
+for i in queue:
+    print(list_of_fav[i].strip())
