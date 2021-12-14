@@ -1,3 +1,11 @@
+'''
+
+                            Online Python Compiler.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -43,35 +51,33 @@ lamps_price = lamps_item['price']
 lamps_cost = lamps_quantity * lamps_price
 print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
 
+table_code = goods['Стол']
+table_item = store[table_code]
+table_quantity = table_item[0]['quantity'] + table_item[1]['quantity']
+table_cost = table_item[0]['quantity'] * table_item[0]['price'] + table_item[1]['quantity'] * table_item[1]['price']
+print('Стол -', table_quantity, 'шт, стоимость', table_cost, 'руб')
+
+table_code = goods['Диван']
+table_item = store[table_code]
+table_quantity = table_item[0]['quantity'] + table_item[1]['quantity']
+table_cost = table_item[0]['quantity'] * table_item[0]['price'] + table_item[1]['quantity'] * table_item[1]['price']
+print('Диван -', table_quantity, 'шт, стоимость', table_cost, 'руб')
+
+table_code = goods['Стул']
+table_item = store[table_code]
+table_quantity = table_item[0]['quantity'] + table_item[1]['quantity'] + table_item[2]['quantity']
+table_cost = table_item[0]['quantity'] * table_item[0]['price'] + table_item[1]['quantity'] * table_item[1]['price'] + table_item[2]['quantity'] * table_item[2]['price']
+print('Стул -', table_quantity, 'шт, стоимость', table_cost, 'руб')
+
+
+
 # Вывести стоимость каждого товара на складе: один раз распечать сколько всего столов, стульев и т.д. на складе
 # Формат строки <товар> - <кол-во> шт, стоимость <общая стоимость> руб
 
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
-tables_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price']
-table_code = goods['Стол']
-tables_item = store[table_code][0]
-tables_quantity = tables_item['quantity']
-tables_price = tables_item['price']
-tables_cost = tables_quantity * tables_price
-print('Стол -', tables_quantity, 'шт, стоимость', tables_cost, 'руб')
 
-sofas_cost = store[goods['Диван']][0]['quantity'] * store[goods['Диван']][0]['price']
-sofa_code = goods['Диван']
-sofas_item = store[sofa_code][0]
-sofas_quantity = sofas_item['quantity']
-sofas_price = sofas_item['price']
-sofas_cost = sofas_quantity * sofas_price
-print('Диван -', sofas_quantity, 'шт, стоимость', sofas_cost, 'руб')
-
-chairs_cost = store[goods['Стул']][0]['quantity'] * store[goods['Стул']][0]['price']
-chair_code = goods['Стул']
-chairs_item = store[chair_code][0]
-chairs_quantity = chairs_item['quantity']
-chairs_price = chairs_item['price']
-chairs_cost = chairs_quantity * chairs_price
-print('Стул -', chairs_quantity, 'шт, стоимость', chairs_cost, 'руб')
 
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
@@ -79,6 +85,7 @@ print('Стул -', chairs_quantity, 'шт, стоимость', chairs_cost, '�
 # и оформить попытку сдачи ДЗ! Без этого ДЗ не будет проверяться!                        #
 # Как оформить попытку сдачи смотрите видео - https://youtu.be/qVpN0L-C3LU               #
 ##########################################################################################
+
 
 
 

@@ -3,6 +3,7 @@
 
 # Есть список песен группы Depeche Mode со временем звучания с точносттю до долей минут
 
+
 violator_songs_list = [
     ['World in My Eyes', 4.86],
     ['Sweetest Perfection', 4.43],
