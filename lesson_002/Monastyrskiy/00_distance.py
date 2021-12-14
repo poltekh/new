@@ -14,11 +14,6 @@ sites = {
 
 distances = {}
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4ea3bd7 (Версия 3)
 # TODO здесь заполнение словаря
 
 print(distances)
