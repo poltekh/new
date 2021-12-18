@@ -10,8 +10,4 @@
 
 a, b = 179, 37
 
-c = 0
-while a > b:
-    a = a - b
-    c+=1
-print(c)
+# TODO здесь ваш код
