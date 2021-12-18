@@ -9,6 +9,15 @@
 # Формат вывода:
 #   Студенту надо попросить ХХХ.ХХ рублей
 
-educational_grant, expenses = 10000, 12000
+edu_grant, exp = 10000, 12000
 
 # TODO здесь ваш код
+m = 1
+money = exp
+while m < 10:
+    exp *= 1.03
+    money += exp
+    m += 1
+mn = money - edu_grant*10
+print( round( mn, 2 ))
+

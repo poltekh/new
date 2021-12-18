@@ -47,9 +47,18 @@ store = {
 #     вывод на консоль количества и стоимости товара на складе
 
 # TODO здесь ваш код
-
-
-
-
-
-
+count = 0
+sm = 0
+print()
+for i in goods:
+    for j in store[goods[i]]:
+        for q in j:
+            if q == 'quantity':
+                count += j[q]
+                quan = j[q]
+            else:
+                sm += quan*j[q]
+    print( i, '-', count, 'шт.', 'стоимость -', sm, 'руб.' )
+    count = 0
+    sm = 0
+    print()
