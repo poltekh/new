@@ -11,15 +11,12 @@ user_input = input("Введите, пожалуйста, номер месяц�
 month = int(user_input)
 print('Вы ввели', month)
 
-user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-print('Вы ввели', month)
+# TODO здесь ваш код
 if month in [1,3,5,7,8,10,12]:
-    print( '31')
-elif month == 2:
-    print( '28')
+    print( '31' )
 elif month > 12:
-    print( 'Incorrect')
+    print( 'Incorrect' )
+elif month == 2:
+    print( '28' )
 else:
     print( '30' )
-hdsouhesgs
