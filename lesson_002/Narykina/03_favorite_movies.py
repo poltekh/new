@@ -13,27 +13,5 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 
 # Переопределять my_favorite_movies и использовать .split() нельзя.
 # Запятая не должна выводиться.
-<<<<<<< HEAD
-arr = []
-sl = ""
-for i in my_favorite_movies:
-    if(i != ","):
-        sl = sl + i
-    else:
-        arr.append(sl)
-        sl = ""
-arr.append(sl)
-print(arr[0], arr[4], arr[1], arr[3])
-=======
-movies = []
-movie = ''
-for char in my_favorite_movies:
-    if char == ',':
-        movies.append(movie)
-        movie = ''
-    else:
-        movie = movie + char
-movies.append(movie)
-print(movies[0], movies[4], movies[1], movies[3])
 
->>>>>>> 341e0f52f6cc9049d8719f58db8a521275f5857a
+# TODO здесь ваш код

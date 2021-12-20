@@ -46,7 +46,15 @@ store = {
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
 
-# TODO здесь ваш код
+res = 0
+keys = list(goods.keys())
+### обращаемся не по коду а по наименованию
+# в цикле необходим отступ
+for key in keys:
+   keyvalue=goods[key]
+   res += store[keyvalue][0]["quantity"] * store[keyvalue][0]["price"]
+
+print(res)
 
 
 

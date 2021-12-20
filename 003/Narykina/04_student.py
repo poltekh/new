@@ -11,4 +11,8 @@
 
 educational_grant, expenses = 10000, 12000
 
-# TODO здесь ваш код
+needs = abs(educational_grant - expenses)
+for i in range(9):
+    expenses *= 1.03
+    needs += abs(educational_grant - expenses)
+print(f"Студенту надо попросить {round(needs,2)} рублей")

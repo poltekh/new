@@ -10,5 +10,6 @@
 user_input = input("Введите, пожалуйста, номер месяца: ")
 month = int(user_input)
 print('Вы ввели', month)
+days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+print("В нём ", days[month -1], " дней")
 
-# TODO здесь ваш код
