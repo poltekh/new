@@ -10,12 +10,21 @@ radius = 42
 #       пи возьмите равным 3.1415926
 #       точность указывается в функции round()
 <<<<<<< HEAD
+<<<<<<< HEAD
 print(round(3.1415926 * (radius ** 2), 4))
 =======
 square = round(3.1415926 * (radius ** 2), 4)
 print(square)
 
 >>>>>>> 341e0f52f6cc9049d8719f58db8a521275f5857a
+=======
+square = round(3.1415926 * (radius ** 2), 4)
+print(square)
+
+=======
+print(round(3.1415926 * (radius ** 2), 4))
+>>>>>>> 12eef8ccb11bebf8d2c24e207d99da6575481a28
+>>>>>>> 9e4ea4dcc8a4f845909ef8fcd064ff92e9055da8
 
 
 # Далее, пусть есть координаты точки
@@ -31,10 +40,17 @@ point = (23, 34)
 #       операции сравнения дают булевы константы True и False
 x, y = point
 <<<<<<< HEAD
+<<<<<<< HEAD
 if ((x ** 2 + y ** 2) ** 0.5) <= radius:
 =======
 if((x ** 2 + y ** 2) ** 0.5) <= radius:
 >>>>>>> 341e0f52f6cc9049d8719f58db8a521275f5857a
+=======
+if((x ** 2 + y ** 2) ** 0.5) <= radius:
+=======
+if ((x ** 2 + y ** 2) ** 0.5) <= radius:
+>>>>>>> 12eef8ccb11bebf8d2c24e207d99da6575481a28
+>>>>>>> 9e4ea4dcc8a4f845909ef8fcd064ff92e9055da8
     print(True)
 else:
     print(False)
@@ -45,10 +61,17 @@ point_2 = (30, 30)
 # Или False, если точка лежит вовне круга.
 x, y = point_2
 <<<<<<< HEAD
+<<<<<<< HEAD
 if ((x ** 2 + y ** 2) ** 0.5) <= radius:
 =======
 if((x ** 2 + y ** 2) ** 0.5) <= radius:
 >>>>>>> 341e0f52f6cc9049d8719f58db8a521275f5857a
+=======
+if((x ** 2 + y ** 2) ** 0.5) <= radius:
+=======
+if ((x ** 2 + y ** 2) ** 0.5) <= radius:
+>>>>>>> 12eef8ccb11bebf8d2c24e207d99da6575481a28
+>>>>>>> 9e4ea4dcc8a4f845909ef8fcd064ff92e9055da8
     print(True)
 else:
     print(False)
@@ -59,7 +82,14 @@ else:
 # False
 # False
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 341e0f52f6cc9049d8719f58db8a521275f5857a
+=======
+=======
+
+
+>>>>>>> 12eef8ccb11bebf8d2c24e207d99da6575481a28
+>>>>>>> 9e4ea4dcc8a4f845909ef8fcd064ff92e9055da8
