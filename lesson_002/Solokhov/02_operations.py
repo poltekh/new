@@ -8,7 +8,12 @@
 
 # Пример для чисел "1 2 3" и "9"
 result = 1 * ((2 + 3) * 4 + 5)
+<<<<<<< HEAD
 
 print(result)
 
 
+=======
+print(result)
+
+>>>>>>> 12eef8ccb11bebf8d2c24e207d99da6575481a28
