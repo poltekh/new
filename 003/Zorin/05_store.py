@@ -51,7 +51,9 @@ for i in goods:
     id = goods[i]
     q = 0
     sum = 0
-    for a in store[i]:
-        q = a['quantity']
-        sum = a['price'] * q
-        print(name, ' - ', q, ' штук, стоимость:', sum, 'рублей')
+    k = 0
+    for t in store[goods[i]]:
+        q = t['quantity']
+        k = k + q
+        sum = sum + t['price'] * q
+    print(name, ' - ', k, ' штук, стоимость:', sum, 'рублей')
