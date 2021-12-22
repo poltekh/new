@@ -10,7 +10,7 @@
 # Использовать только операторы if/elif/else, можно вложенные
 
 envelop_x, envelop_y = 10, 7
-paper_x, paper_y = 8, 9
+#paper_x, paper_y = 8, 9
 # проверить для
 # paper_x, paper_y = 9, 8
 # paper_x, paper_y = 6, 8
@@ -20,9 +20,9 @@ paper_x, paper_y = 8, 9
 # paper_x, paper_y = 9, 11
 # (просто раскоментировать нужную строку и проверить свой код)
 
-if (paper_x <= envelop_x and paper_y <= envelop_y) or (paper_x <= envelop_y and paper_y <= envelop_x):
-    print('ДА')
-else: print('НЕТ')
+#if (paper_x <= envelop_x and paper_y <= envelop_y) or (paper_x <= envelop_y and paper_y <= envelop_x):
+#    print('ДА')
+#else: print('НЕТ')
 
 # Усложненное задание, решать по желанию.
 # Заданы размеры hole_x, hole_y прямоугольного отверстия и размеры brick_х, brick_у, brick_z кирпича (все размеры
@@ -30,8 +30,8 @@ else: print('НЕТ')
 #
 # Определить, пройдет ли кирпич через отверстие (грани кирпича параллельны сторонам отверстия)
 
-# hole_x, hole_y = 8, 9
-# brick_x, brick_y, brick_z = 11, 10, 2
+hole_x, hole_y = 8, 9
+brick_x, brick_y, brick_z = 11, 10, 2
 # brick_x, brick_y, brick_z = 11, 2, 10
 # brick_x, brick_y, brick_z = 10, 11, 2
 # brick_x, brick_y, brick_z = 10, 2, 11
@@ -51,4 +51,6 @@ else: print('НЕТ')
 # brick_x, brick_y, brick_z = 3, 11, 6
 # (просто раскоментировать нужную строку и проверить свой код)
 
-# TODO здесь ваш код
+if (brick_x <= hole_x and brick_y <= hole_y) or (brick_x <= hole_y and brick_y <= hole_x) or (brick_x <= hole_x and brick_z <= hole_y) or (brick_z <= hole_x and brick_x <= hole_y) or (brick_y <= hole_x and brick_z <= hole_y) or (brick_z <= hole_x and brick_y <= hole_y):
+    print('ДА')
+else: print('НЕТ')
