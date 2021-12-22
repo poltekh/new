@@ -13,4 +13,4 @@ result = 0
 while a >= b:
     result += 1
     a = a - b
-print("результат целочесленного деленя:", result)
+print("целочесленное деление", a,'на',b,'даёт', result)
