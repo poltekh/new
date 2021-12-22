@@ -10,7 +10,8 @@
 
 a, b = 179, 37
 result = 0
+k = a
 while a >= b:
     result += 1
     a = a - b
-print("целочесленное деление", a,'на',b,'даёт', result)
+print("целочесленное деление", k ,'на', b ,'даёт', result)
