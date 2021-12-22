@@ -16,5 +16,5 @@ while k <= 10:
     S = S + expenses
     expenses = expenses * 1.03
     k += 1
-need = 10*educational_grant - S
+need = round(S - 10*educational_grant, 2)
 print('студенту надо попросить', need, 'рублей')
