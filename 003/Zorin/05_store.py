@@ -46,16 +46,12 @@ store = {
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
 
-res = 0
-keys = list(goods.keys())
-for key in keys:
-   keyvalue=goods[key]
-   res += store[keyvalue][0]["quantity"] * store[keyvalue][0]["price"]
-
-print(res)
-
-
-
-
-
-
+for i in goods:
+    name = i
+    id = goods[i]
+    q = 0
+    sum = 0
+    for a in store[i]:
+        q = a['quantity']
+        sum = a['price'] * q
+        print(name, ' - ', q, ' штук, стоимость:', sum, 'рублей')
