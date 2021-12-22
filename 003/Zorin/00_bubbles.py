@@ -18,11 +18,11 @@ sd.resolution = (1300, 600)
 #def bubble(point, delt):
 #    radius = 30
 #    for i in range (3):
-#        sd.circle(center_position = point, radius = radius, width = 1)
+#        sd.circle(point, radius, sd.COLOR_RED, 1)
 #        radius += delt
 #point = sd.get_point(500,500)
 #delt = 5
-#bubble (point = point, delt = delt)
+#bubble (point, delt)
 
 # Нарисовать 10 пузырьков в ряд
 
