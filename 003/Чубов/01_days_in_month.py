@@ -12,11 +12,3 @@ month = int(user_input)
 print('Вы ввели', month)
 
 # TODO здесь ваш код
-if month in [1,3,5,7,8,10,12]
-    print( '31' )
-elif month > 12:
-    print( 'Incorrect' )
-elif month == 2:
-    print( '28' )
-else:
-    print( '30' )
