@@ -10,9 +10,11 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
+summ = expenses - educational_grant
+k =1
+while k<=9:
+    expenses*=1.03
+    summ+=expenses-educational_grant
+    k+=1
+print(round(summ,2))
 
-needs = abs(educational_grant - expenses)
-for i in range(9):
-    expenses *= 1.03
-    needs += abs(educational_grant - expenses)
-print(f"Студенту надо попросить {round(needs,2)} рублей")
