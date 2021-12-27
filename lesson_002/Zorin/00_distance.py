@@ -14,9 +14,9 @@ sites = {
 
 distances = {}
 
-MoscowLondon = ((sites['Moscow'][0]-sites['London'][0])**2 + (sites['Moscow'][1]-sites['London'][1])**2)
-MoscowParis = ((sites['Moscow'][0]-sites['Paris'][0])**2 + (sites['Moscow'][1]-sites['Paris'][1])**2)
-LondonParis = ((sites['London'][0]-sites['Paris'][0])**2 + (sites['London'][1]-sites['Paris'][1])**2)
+MoscowLondon = ((sites['Moscow'][0]-sites['London'][0])**2 + (sites['Moscow'][1]-sites['London'][1])**2)**0.5
+MoscowParis = ((sites['Moscow'][0]-sites['Paris'][0])**2 + (sites['Moscow'][1]-sites['Paris'][1])**2)**0.5
+LondonParis = ((sites['London'][0]-sites['Paris'][0])**2 + (sites['London'][1]-sites['Paris'][1])**2)**0.5
 
 distances = {
     'Moscow': {'to_London': (MoscowLondon), 'to_Paris': (MoscowParis), },
