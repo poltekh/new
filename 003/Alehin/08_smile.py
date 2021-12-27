@@ -31,4 +31,4 @@ smile(250,250,current_color)
 simple_draw.pause()
 
 
-simple_draw.pause()
+
