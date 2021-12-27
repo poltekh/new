@@ -5,7 +5,8 @@
 
 zoo = ['lion', 'kangaroo', 'elephant', 'monkey', ]
 
-# посадите медведя (bear) между львом и кенгуру
+# посадите медведя (bear) между л
+# ьвом и кенгуру
 #  и выведите список на консоль
 zoo = ['lion', "bear", 'kangaroo', 'elephant', 'monkey']
 print(zoo)
